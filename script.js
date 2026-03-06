@@ -30,17 +30,6 @@ notes.forEach((note, index)=>{
 
 });
 
-/* PROGRESS COUNTER */
-function updateProgress(){
-
-    const checks = document.querySelectorAll("input[type='checkbox']");
-    const checked = document.querySelectorAll("input[type='checkbox']:checked");
-
-    document.getElementById("progress").textContent =
-        checked.length + " / " + checks.length + " checks completed";
-
-}
-
 /* COLLAPSIBLE SECTIONS */
 function toggleSection(header){
 
@@ -100,9 +89,7 @@ function resetChecklist(){
     });
 
     collectNotes();
-    updateProgress();
+    
 
 }
-
-updateProgress();
 collectNotes();
