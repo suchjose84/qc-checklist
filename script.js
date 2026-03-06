@@ -45,11 +45,29 @@ function collectNotes(){
 
     let text = "";
 
-    notes.forEach(note=>{
+    const sections = document.querySelectorAll(".section");
 
-        if(note.value.trim() !== ""){
-            text += "- " + note.value + "\n";
-        }
+    sections.forEach(section => {
+
+        const labels = section.querySelectorAll("label");
+
+        labels.forEach(label => {
+
+            const checkbox = label.querySelector("input[type='checkbox']");
+            const input = label.nextElementSibling;
+
+            if(input && input.classList.contains("note")){
+
+                const value = input.value.trim();
+
+                if(value !== ""){
+                    const labelText = label.innerText.trim();
+                    text += labelText + " - " + value + "\n";
+                }
+
+            }
+
+        });
 
     });
 

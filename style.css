@@ -68,6 +68,11 @@ label{
     padding:6px 0;
     cursor:pointer;
 }
+input[type="checkbox"]{
+    transform: scale(1.5);
+    margin-right:10px;
+    cursor:pointer;
+}
 
 .note{
     width:100%;
