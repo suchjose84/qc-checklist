@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ad QC Checklist</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Ad Quality Check Checklist</h1>
+<p id="progress">0 / 0 checks completed</p>
+
+<div class="wrapper">
+
+<!-- CHECKLIST -->
+<div class="checklist">
+
+<h2 onclick="toggleSection(this)">Critical Information</h2>
+<div class="section">
+
+<label><input type="checkbox"> Business name</label>
+<input class="note" placeholder="Describe issue...">
+
+<label><input type="checkbox"> Phone number</label>
+<input class="note" placeholder="Describe issue...">
+
+<label><input type="checkbox"> Address</label>
+<input class="note" placeholder="Describe issue...">
+
+<label><input type="checkbox"> Website / QR code</label>
+<input class="note" placeholder="Describe issue...">
+
+<label><input type="checkbox"> Hours of operation</label>
+<input class="note" placeholder="Describe issue...">
+
+<label><input type="checkbox"> Expiration date</label>
+<input class="note" placeholder="Describe issue...">
+
+</div>
+
+<h2 onclick="toggleSection(this)">Offer Details</h2>
+<div class="section">
+
+<label><input type="checkbox"> Offer wording</label>
+<input class="note" placeholder="Describe issue...">
+
+<label><input type="checkbox"> Disclaimers</label>
+<input class="note" placeholder="Describe issue...">
+
+<label><input type="checkbox"> Minimum purchase</label>
+<input class="note" placeholder="Describe issue...">
+
+</div>
+
+<h2 onclick="toggleSection(this)">Images</h2>
+<div class="section">
+
+<label><input type="checkbox"> Correct images used</label>
+<input class="note" placeholder="Describe issue...">
+
+<label><input type="checkbox"> Image quality</label>
+<input class="note" placeholder="Describe issue...">
+
+<label><input type="checkbox"> Before/After labels</label>
+<input class="note" placeholder="Describe issue...">
+
+</div>
+
+<h2 onclick="toggleSection(this)">Layout</h2>
+<div class="section">
+
+<label><input type="checkbox"> Text readability</label>
+<input class="note" placeholder="Describe issue...">
+
+<label><input type="checkbox"> Spacing & alignment</label>
+<input class="note" placeholder="Describe issue...">
+
+<label><input type="checkbox"> Safe margins</label>
+<input class="note" placeholder="Describe issue...">
+
+</div>
+
+<h2 onclick="toggleSection(this)">Final Check</h2>
+<div class="section">
+
+<label><input type="checkbox"> Spelling / grammar</label>
+<input class="note" placeholder="Describe issue...">
+
+<label><input type="checkbox"> Client approval</label>
+<input class="note" placeholder="Describe issue...">
+
+<label><input type="checkbox"> Final version saved</label>
+<input class="note" placeholder="Describe issue...">
+
+</div>
+
+<button onclick="resetChecklist()">Reset QC</button>
+
+</div>
+
+<!-- NOTES PANEL -->
+<div class="notesPanel">
+
+<h2>QC Notes</h2>
+
+<textarea id="notesOutput" readonly></textarea>
+
+<button onclick="copyNotes()">Copy Notes</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
