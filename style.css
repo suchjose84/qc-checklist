@@ -20,6 +20,14 @@ h1{
     margin-bottom:10px;
 }
 
+/* Bigger checkboxes */
+input[type="checkbox"]{
+    width:20px;
+    height:20px;
+    margin-right:8px;
+    cursor:pointer;
+}
+
 #progress{
     text-align:center;
     font-weight:bold;
