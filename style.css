@@ -69,7 +69,7 @@ label{
     cursor:pointer;
 }
 input[type="checkbox"]{
-    transform: scale(1.5);
+    transform: scale(1.1);
     margin-right:10px;
     cursor:pointer;
 }
